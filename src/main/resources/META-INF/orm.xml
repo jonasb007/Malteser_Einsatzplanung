@@ -6,7 +6,7 @@
     
     <persistence-unit-metadata>
         <persistence-unit-defaults>
-            <schema>Malteser_Einsatzplanung</schema>
+            <schema>MALTESER_EINSATZPLANUNG</schema>
         </persistence-unit-defaults>
     </persistence-unit-metadata>
     
