@@ -46,6 +46,9 @@ public class User implements Serializable {
     @NotNull(message = "Der Benutzername darf nicht leer sein.")
     private String username;
     
+    private String vorname;
+    private String nachname;
+    
     public class Password {
         @Size(min = 6, max = 64, message = "Das Passwort muss zwischen sechs und 64 Zeichen lang sein.")
         public String password = "";
@@ -72,30 +75,70 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(String username, String password) {
+    public User(String vorname, String nachname, String username, String password) {
+        this.vorname= vorname;
+        this.nachname = nachname;
         this.username = username;
         this.password.password = password;
         this.passwordHash = this.hashPassword(password);
     }
     //</editor-fold>
 
-    //<editor-fold defaultstate="collapsed" desc="Setter und Getter">
+//<editor-fold defaultstate="collapsed" desc="Getter und Setter">
+
     public String getUsername() {
         return username;
     }
-
+    
     public void setUsername(String id) {
         this.username = id;
     }
-
+    
     public List<Task> getTasks() {
         return tasks;
     }
-
+    
     public void setTasks(List<Task> tasks) {
         this.tasks = tasks;
     }
-    //</editor-fold>
+
+    
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+    
+    public static char[] getHEX_ARRAY() {
+        return HEX_ARRAY;
+    }
+    
+    public String getVorname() {
+        return vorname;
+    }
+    
+    public String getNachname() {
+        return nachname;
+    }
+    
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+    
+    public void setVorname(String vorname) {
+        this.vorname = vorname;
+    }
+    
+    public void setNachname(String nachname) {
+        this.nachname = nachname;
+    }
+    
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
+    }
+    
+    public void setGroups(List<String> groups) {
+        this.groups = groups;
+    }
+//</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Passwort setzen und prüfen">
     /**
