@@ -15,7 +15,7 @@
 
 <template:base>
     <jsp:attribute name="title">
-        Liste der Aufgaben
+        Liste der Einsätze
     </jsp:attribute>
 
     <jsp:attribute name="head">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/task/new/"/>">Aufgabe anlegen</a>
+            <a href="<c:url value="/app/tasks/task/new/"/>">Einsatz anlegen</a>
         </div>
 
         <div class="menuitem">
@@ -66,11 +66,11 @@
             </button>
         </form>
 
-        <%-- Gefundene Aufgaben --%>
+        <%-- Gefundene Einsätze --%>
         <c:choose>
             <c:when test="${empty tasks}">
                 <p>
-                    Es wurden keine Aufgaben gefunden. 🐈
+                    Es wurden keine Einsätze gefunden. 🐈
                 </p>
             </c:when>
             <c:otherwise>

@@ -28,11 +28,15 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/task/new/"/>">Aufgabe anlegen</a>
+            <a href="<c:url value="/app/tasks/task/new/"/>">Einsatz anlegen</a>
         </div>
 
         <div class="menuitem">
             <a href="<c:url value="/app/tasks/categories/"/>">Kategorien bearbeiten</a>
+        </div>
+        
+        <div class="menuitem">
+            <a href="<c:url value="/app/tasks/categories/"/>">Daten ändern ${pageContext.request.userPrincipal.name}</a>
         </div>
     </jsp:attribute>
 
