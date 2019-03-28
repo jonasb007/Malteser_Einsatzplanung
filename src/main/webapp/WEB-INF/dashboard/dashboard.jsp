@@ -36,7 +36,7 @@
         </div>
         
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/categories/"/>">Daten ändern ${pageContext.request.userPrincipal.name}</a>
+            <a href="<c:url value="/app/tasks/useredit/"/>">Profil bearbeiten</a>
         </div>
     </jsp:attribute>
 
@@ -44,7 +44,7 @@
         <c:choose>
             <c:when test="${empty sections}">
                 <p>
-                    Es wurden keine Dashboard-Kacheln gefunden. 🙈
+                    Es wurden keine Dashboard-Kacheln gefunden.
                 </p>
             </c:when>
             <c:otherwise>
@@ -62,7 +62,6 @@
                                     <div class="label">
                                         <c:out value="${tile.label}"/>
                                     </div>
-                                    <div class="icon icon-${tile.icon}"></div>
                                     <div class="amount">
                                         <c:choose>
                                             <c:when test="${tile.showDecimals}">

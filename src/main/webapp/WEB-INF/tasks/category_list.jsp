@@ -42,7 +42,7 @@
                 <label for="j_username">Neue Kategorie:</label>
                 <input type="text" name="name" value="${categories_form.values["name"][0]}">
 
-                <button type="submit" name="action" value="create" class="icon-pencil">
+                <button type="submit" name="action" value="create">
                     Anlegen
                 </button>
             </div>
@@ -60,7 +60,7 @@
             <c:choose>
                 <c:when test="${empty categories}">
                     <p>
-                        Es sind noch keine Kategorien vorhanden. 🐏
+                        Es sind noch keine Kategorien vorhanden.
                     </p>
                 </c:when>
                 <c:otherwise>
@@ -75,7 +75,7 @@
                             </c:forEach>
                         </div>
 
-                        <button type="submit" name="action" value="delete" class="icon-trash">
+                        <button type="submit" name="action" value="delete">
                             Markierte löschen
                         </button>
                     </div>

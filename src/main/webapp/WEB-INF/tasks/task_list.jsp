@@ -70,7 +70,7 @@
         <c:choose>
             <c:when test="${empty tasks}">
                 <p>
-                    Es wurden keine Einsätze gefunden. 🐈
+                    Es wurden keine Einsätze gefunden.
                 </p>
             </c:when>
             <c:otherwise>
@@ -81,7 +81,7 @@
                         <tr>
                             <th>Bezeichnung</th>
                             <th>Kategorie</th>
-                            <th>Eigentümer</th>
+                            <th>Verantwortlicher</th>
                             <th>Status</th>
                             <th>Fällig am</th>
                         </tr>

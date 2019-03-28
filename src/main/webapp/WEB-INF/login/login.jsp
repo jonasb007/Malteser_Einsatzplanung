@@ -46,7 +46,7 @@
                     <input type="password" name="j_password">
 
                     <%-- Button zum Abschicken --%>
-                    <button class="icon-login" type="submit">
+                    <button type="submit">
                         Einloggen
                     </button>
                 </div>

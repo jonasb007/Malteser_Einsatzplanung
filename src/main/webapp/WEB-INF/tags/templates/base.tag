@@ -38,6 +38,7 @@
         <header>
             <%-- Titelzeile --%>
             <div id="titlebar">
+                <img src="<c:url value="/img/malteserLogo.png"/>" alt="Malteser" id="logo" height="8%" width="8%"/>
                 <div class="appname">
                     Einsatzverwaltung
                 </div>
@@ -45,6 +46,7 @@
                     ${title}
                 </div>
             </div>
+                
 
             <%-- Menü --%>
             <div id="menubar">
@@ -52,7 +54,7 @@
 
                 <c:if test="${not empty pageContext.request.userPrincipal}">
                     <div class="menuitem">
-                        <a href="<c:url value="/logout/"/>" class="icon-logout">Logout ${pageContext.request.userPrincipal.name}</a>
+                        <a href="<c:url value="/logout/"/>">Logout ${pageContext.request.userPrincipal.name}</a>
                     </div>
                 </c:if>
             </div>

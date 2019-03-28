@@ -13,7 +13,7 @@ package dhbwka.wwi.vertsys.javaee.Malteser.tasks.jpa;
  * Statuswerte einer Aufgabe.
  */
 public enum TaskStatus {
-    OPEN, IN_PROGRESS, FINISHED, CANCELED, POSTPONED;
+    OPEN, IN_PROGRESS, FINISHED, CANCELED;
 
     /**
      * Bezeichnung ermitteln
@@ -25,13 +25,11 @@ public enum TaskStatus {
             case OPEN:
                 return "Offen";
             case IN_PROGRESS:
-                return "In Bearbeitung";
+                return "Im Einsatz";
             case FINISHED:
-                return "Erledigt";
+                return "Einsatz abgeschlossen";
             case CANCELED:
-                return "Abgebrochen";
-            case POSTPONED:
-                return "Zurückgestellt";
+                return "Einsatz abgebrochen";
             default:
                 return this.toString();
         }

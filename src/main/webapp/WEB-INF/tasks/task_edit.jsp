@@ -46,7 +46,7 @@
                 <input type="hidden" name="csrf_token" value="${csrf_token}">
 
                 <%-- Eingabefelder --%>
-                <label for="task_owner">Eigentümer:</label>
+                <label for="task_owner">Verantwortlicher:</label>
                 <div class="side-by-side">
                     <input type="text" name="task_owner" value="${task_form.values["task_owner"][0]}" readonly="readonly">
                 </div>
