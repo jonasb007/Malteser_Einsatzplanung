@@ -51,7 +51,6 @@
             <%-- Menü --%>
             <div id="menubar">
                 <jsp:invoke fragment="menu"/>
-
                 <c:if test="${not empty pageContext.request.userPrincipal}">
                     <div class="menuitem">
                         <a href="<c:url value="/logout/"/>">Logout ${pageContext.request.userPrincipal.name}</a>
