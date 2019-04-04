@@ -1,10 +1,8 @@
-<#if licenseFirst??>
+﻿<#if licenseFirst??>
 ${licenseFirst}
 </#if>
-${licensePrefix}Copyright © ${date?date?string("yyyy")} Dennis Schulmeister-Zimolong
+${licensePrefix}Copyright © ${date?date?string("yyyy")} Paula Sollner, Justin Hollmann, Jonas Beuth
 ${licensePrefix}
-${licensePrefix}E-Mail: dhbw@windows3.de
-${licensePrefix}Webseite: https://www.wpvs.de/
 ${licensePrefix}
 ${licensePrefix}Dieser Quellcode ist lizenziert unter einer
 ${licensePrefix}Creative Commons Namensnennung 4.0 International Lizenz.
