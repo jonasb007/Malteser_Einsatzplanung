@@ -42,7 +42,7 @@ Folgende Entwicklungswerkzeuge kommen dabei zum Einsatz:
 Screenshots
 -----------
 
-<table style="max-width: 100%;">
+<table style="max-width: 50%;">
     <tr>
         <td>
             <a href="screenshot1.png">
@@ -65,7 +65,7 @@ Screenshots
     </tr>
 </table>
 
-<table style="max-width: 100%;">
+<table style="max-width: 50%;">
     <tr>
         <td>
             <a href="screenshot3.png">
@@ -88,7 +88,7 @@ Screenshots
     </tr>
 </table>
 
-<table style="max-width: 100%;">
+<table style="max-width: 50%;">
     <tr>
         <td>
             <a href="screenshot5.png">
