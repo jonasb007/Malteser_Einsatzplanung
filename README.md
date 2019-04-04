@@ -46,12 +46,12 @@ Screenshots
     <tr>
         <td>
             <a href="screenshot1.png">
-                <img src="screenshot1.png" style="display: block; width: 50%;" />
+                <img src="screenshot1.png" style="display: block; width: 10%;" />
             </a>
         </td>
         <td>
             <a href="screenshot2.png">
-                <img src="screenshot2.png" style="display: block; width: 50%;" />
+                <img src="screenshot2.png" style="display: block; width: 10%;" />
             </a>
         </td>
     </tr>
@@ -69,12 +69,12 @@ Screenshots
     <tr>
         <td>
             <a href="screenshot3.png">
-                <img src="screenshot3.png" style="display: block; width: 50%;" />
+                <img src="screenshot3.png" style="display: block; width: 10%;" />
             </a>
         </td>
         <td>
             <a href="screenshot4.png">
-                <img src="screenshot4.png" style="display: block; width: 50%;" />
+                <img src="screenshot4.png" style="display: block; width: 10%;" />
             </a>
         </td>
     </tr>
@@ -92,12 +92,12 @@ Screenshots
     <tr>
         <td>
             <a href="screenshot5.png">
-                <img src="screenshot5.png" style="display: block; width: 50%;" />
+                <img src="screenshot5.png" style="display: block; width: 10%;" />
             </a>
         </td>
         <td>
             <a href="screenshot6.png">
-                <img src="screenshot6.png" style="display: block; width: 50%;" />
+                <img src="screenshot6.png" style="display: block; width: 10%;" />
             </a>
         </td>
     </tr>
