@@ -42,16 +42,16 @@ Folgende Entwicklungswerkzeuge kommen dabei zum Einsatz:
 Screenshots
 -----------
 
-<table style="max-width: 50%;">
+<table style="max-width: 100%;">
     <tr>
         <td>
-            <a href="screenshot1.png">
-                <img src="screenshot1.png" style="display: block; width: 10%;" />
+            <a href="screenshot1.PNG">
+                <img src="screenshot1.png" style="display: block; width: 100%;" />
             </a>
         </td>
         <td>
-            <a href="screenshot2.png">
-                <img src="screenshot2.png" style="display: block; width: 10%;" />
+            <a href="screenshot2.PNG">
+                <img src="screenshot2.png" style="display: block; width: 100%;" />
             </a>
         </td>
     </tr>
@@ -65,16 +65,16 @@ Screenshots
     </tr>
 </table>
 
-<table style="max-width: 50%;">
+<table style="max-width: 100%;">
     <tr>
         <td>
-            <a href="screenshot3.png">
-                <img src="screenshot3.png" style="display: block; width: 10%;" />
+            <a href="screenshot3.PNG">
+                <img src="screenshot3.png" style="display: block; width: 100%;" />
             </a>
         </td>
         <td>
-            <a href="screenshot4.png">
-                <img src="screenshot4.png" style="display: block; width: 10%;" />
+            <a href="screenshot4.PNG">
+                <img src="screenshot4.png" style="display: block; width: 100%;" />
             </a>
         </td>
     </tr>
@@ -88,16 +88,16 @@ Screenshots
     </tr>
 </table>
 
-<table style="max-width: 50%;">
+<table style="max-width: 100%;">
     <tr>
         <td>
-            <a href="screenshot5.png">
-                <img src="screenshot5.png" style="display: block; width: 10%;" />
+            <a href="screenshot5.PNG">
+                <img src="screenshot5.PNG" style="display: block; width: 100%;" />
             </a>
         </td>
         <td>
-            <a href="screenshot6.png">
-                <img src="screenshot6.png" style="display: block; width: 10%;" />
+            <a href="screenshot6.PNG">
+                <img src="screenshot6.PNG" style="display: block; width: 100%;" />
             </a>
         </td>
     </tr>
