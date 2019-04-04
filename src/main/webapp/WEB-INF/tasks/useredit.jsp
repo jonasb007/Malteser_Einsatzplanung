@@ -50,7 +50,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_vorname" value="${signup_form.values["signup_vorname"][0]}">
+                        <input type="text" name="signup_vorname" value="${sessionScope.user.vorname}">
                     </div>
                     
                     <label for="signup_nachname">
@@ -58,23 +58,16 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_nachname" value="${signup_form.values["signup_nachname"][0]}">
+                        <input type="text" name="signup_nachname" value="${sessionScope.user.nachname}">
                     </div>                    
                     
-                    <label for="signup_username">
-                        Benutzername:
-                        <span class="required">*</span>
-                    </label>
-                    <div class="side-by-side">
-                        <input type="text" name="signup_username" value="${signup_form.values["signup_username"][0]}">
-                    </div>
 
                     <label for="signup_password1">
                         Passwort:
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password1" value="${signup_form.values["signup_password1"][0]}">
+                        <input type="password" name="signup_password1" value="">
                     </div>
 
                     <label for="signup_password2">
@@ -82,7 +75,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password2" value="${signup_form.values["signup_password2"][0]}">
+                        <input type="password" name="signup_password2" value="">
                     </div>
 
                     <%-- Button zum Abschicken --%>
@@ -98,7 +91,7 @@
                     <ul class="errors">
                         <c:forEach items="${signup_form.errors}" var="error">
                             <li>${error}</li>
-                            </c:forEach>
+                        </c:forEach>
                     </ul>
                 </c:if>
             </form>
