@@ -11,8 +11,11 @@ ausgelegten Applikationsserver. Sämtliche Anwendungslogik wird dabei vom Server
 implementiert, so dass für jedes URL-Pattern der Anwendung ein komplett serverseitig
 generierte HTML-Seite abgerufen und im Browser dargestellt wird.
 
-Mithilfe der Anwendung soll die Möglichkeit geschaffen werden Einsätze der Malteser in verschiedene Kategorien
-einzuteilen
+Mithilfe der Anwendung soll die Möglichkeit geschaffen werden, Einsätze der Malteser anzulegen
+und anschließend in verschiedene Kategorien einzuteilen. Die Kategorien können dabei selbst festgelegt
+werden und sind jeweils in "Offen", "Im Einsatz", "Einsatz abgeschlossen", "Einsatz abgebrochen" oder
+alle Stati zu filtern. Zusätzlich bietet die Anwendung eine Benutzerverwaltung mit den Funktionen
+Registrierung, Einloggen, Benutzer verwalten und Ausloggen. Es wird ein SOAP-Webservice verwendet.
 
 Verwendete Technologien
 -----------------------
