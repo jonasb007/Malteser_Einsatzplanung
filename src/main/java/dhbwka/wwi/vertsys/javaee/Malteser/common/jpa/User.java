@@ -31,7 +31,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * Datenbankklasse für einen Benutzer.
+ * Datenbankklasse für einen Benutzer anlegen.
  */
 @Entity
 @Table(name = "MALTESER_USER")
