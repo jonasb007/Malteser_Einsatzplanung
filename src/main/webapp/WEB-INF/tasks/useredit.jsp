@@ -1,7 +1,8 @@
 <%-- 
-    Document   : useredit
-    Created on : 28.03.2019, 15:13:51
-    Author     : Paula Sollner
+    Copyright © 2019 Paula Sollner, Justin Hollmann, Jonas Beuth
+
+    Dieser Quellcode ist lizenziert unter einer
+    Creative Commons Namensnennung 4.0 International Lizenz.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
