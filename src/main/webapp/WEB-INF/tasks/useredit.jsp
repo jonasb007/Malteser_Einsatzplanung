@@ -55,7 +55,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_vorname" value="${task_form.values["signup_vorname"][0]}">
+                        <input type="text" name="signup_vorname" value="${task_form.values["signup_vorname"][0]}${requestScope.eingabeVorname}">
                     </div>
                     
                     <label for="signup_nachname">
@@ -63,7 +63,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_nachname" value="${task_form.values["signup_nachname"][0]}">
+                        <input type="text" name="signup_nachname" value="${task_form.values["signup_nachname"][0]}${requestScope.eingabeNachname}">
                     </div>                    
                     
 
