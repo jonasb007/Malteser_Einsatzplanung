@@ -58,6 +58,7 @@ private ValidationBean validationBean;
         User aktuellerUser = this.userBean.getCurrentUser();
         
         String vorname = request.getParameter("signup_vorname");
+        //if (vorname != null && )
         String nachname = request.getParameter("signup_nachname");
         String password1 = request.getParameter("signup_password1");
         String password2 = request.getParameter("signup_password2");

@@ -2,7 +2,9 @@
 package dhbwka.wwi.vertsys.javaee.Malteser.SOAP.ws;
 
 import dhbwka.wwi.vertsys.javaee.Malteser.common.ejb.UserBean;
+import dhbwka.wwi.vertsys.javaee.Malteser.tasks.ejb.CategoryBean;
 import dhbwka.wwi.vertsys.javaee.Malteser.tasks.ejb.TaskBean;
+import dhbwka.wwi.vertsys.javaee.Malteser.tasks.jpa.Category;
 import dhbwka.wwi.vertsys.javaee.Malteser.tasks.jpa.Task;
 import java.util.List;
 import javax.ejb.EJB;
@@ -18,6 +20,9 @@ public class Malteser_SOAP_Service {
 
     @EJB
     private TaskBean taskBean;
+    
+    @EJB
+    private CategoryBean categoryBean;
     
     @EJB
     private UserBean userBean;
@@ -40,7 +45,22 @@ public class Malteser_SOAP_Service {
 
         // Der geschützte Code, den nicht jeder ausführen darf
         return taskBean.findAll();
-    }
+}
+    
+    @WebMethod
+    @WebResult(name = "kategorie")
+    public List<Category> findAllCategories(
+            @WebParam(name = "username", header = true) String username,
+            @WebParam(name = "password", header = true) String password)
+            throws UserBean.InvalidCredentialsException,
+                   UserBean.AccessRestrictedException {
+
+        // Wirft eine Exception, wenn der Benutzer nicht berechtigt ist
+        this.userBean.validateUser(username, password, "app-user"); //soap-user
+
+        // Der geschützte Code, den nicht jeder ausführen darf
+        return categoryBean.findAll();
+}
 
     
 }
