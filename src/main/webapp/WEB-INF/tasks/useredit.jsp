@@ -55,7 +55,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_vorname" value="${requestScope.eingabeVorname}">
+                        <input type="text" name="signup_vorname" value="${task_form.values["signup_vorname"][0]}">
                     </div>
                     
                     <label for="signup_nachname">
@@ -63,7 +63,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_nachname" value="${requestScope.eingabeNachname}">
+                        <input type="text" name="signup_nachname" value="${task_form.values["signup_nachname"][0]}">
                     </div>                    
                     
 
@@ -72,7 +72,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password1" value="${requestScope.eingabePasswort1}">
+                        <input type="password" name="signup_password1" value="${task_form.values["signup_password1"][0]}">
                     </div>
 
                     <label for="signup_password2">
@@ -80,7 +80,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password2" value="${requestScope.eingabePasswort2}">
+                        <input type="password" name="signup_password2" value="${task_form.values["signup_password2"][0]}">
                     </div>
 
                     <%-- Button zum Abschicken --%>
