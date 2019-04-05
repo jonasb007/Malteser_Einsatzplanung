@@ -92,9 +92,9 @@
                 </div>
 
                 <%-- Fehlermeldungen --%>
-                <c:if test="${!empty requestScope.eingabeError}">
+                <c:if test="${!empty task_form.errors}">
                     <ul class="errors">
-                        <c:forEach items="${requestScope.eingabeError}" var="error">
+                        <c:forEach items="${task_form.errors}" var="error">
                             <li>${error}</li>
                         </c:forEach>
                     </ul>
