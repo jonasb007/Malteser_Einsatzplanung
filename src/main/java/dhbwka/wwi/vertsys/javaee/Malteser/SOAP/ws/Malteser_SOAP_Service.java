@@ -25,11 +25,7 @@ public class Malteser_SOAP_Service {
     public Malteser_SOAP_Service() {
     }
 
-    @WebMethod
-    @WebResult(name = "user")
-    public List<Task> findAllTasks() {
-        return this.taskBean.findAll();
-    }
+   
     
     @WebMethod
     @WebResult(name = "einsatz")
@@ -40,7 +36,7 @@ public class Malteser_SOAP_Service {
                    UserBean.AccessRestrictedException {
 
         // Wirft eine Exception, wenn der Benutzer nicht berechtigt ist
-        this.userBean.validateUser(username, password, "soap-user");
+        this.userBean.validateUser(username, password, "app-user"); //soap-user
 
         // Der geschützte Code, den nicht jeder ausführen darf
         return taskBean.findAll();
