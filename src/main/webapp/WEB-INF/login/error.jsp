@@ -32,5 +32,8 @@
         <p>
             Das hat leider nicht geklappt.
         </p>
+        <p>
+            Bitte versuchen Sie es erneut unter <a href="<c:url value="/logout/"/>">Nochmal versuchen</a>
+        </p>
     </jsp:attribute>
 </template:base>
