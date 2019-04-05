@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Malteser_SOAP_Service;
+package dhbwka.wwi.vertsys.javaee.Malteser.SOAP.ws;
 
 /**
  *
