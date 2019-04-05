@@ -86,6 +86,8 @@ private ValidationBean validationBean;
         }
         
         if (errors.isEmpty()) {
+            FormValues formValues = new FormValues();
+            session.setAttribute("task_form", formValues);
             response.sendRedirect(WebUtils.appUrl(request, "/app/dashboard/"));
         } else {
             // Fehler: Formuler erneut anzeigen
