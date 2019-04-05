@@ -31,7 +31,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * Datenbankklasse für einen Benutzer.
+ * Datenbankklasse für einen Benutzer anlegen.
  */
 @Entity
 @Table(name = "MALTESER_USER")
@@ -46,7 +46,12 @@ public class User implements Serializable {
     @NotNull(message = "Der Benutzername darf nicht leer sein.")
     private String username;
     
+    @Size(min = 3, max = 64, message = "Der Vorname muss zwischen drei und 64 Zeichen lang sein.")
+    @NotNull(message = "Der Vorname darf nicht leer sein.")
     private String vorname;
+    
+    @Size(min = 3, max = 64, message = "Der Nachname muss zwischen drei und 64 Zeichen lang sein.")
+    @NotNull(message = "Der Nachname darf nicht leer sein.")
     private String nachname;
     
     public class Password {

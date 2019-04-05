@@ -32,5 +32,8 @@
         <p>
             Das hat leider nicht geklappt.
         </p>
+        <p>
+            Bitte versuchen Sie es erneut unter "Nochmal versuchen"!</a>
+        </p>
     </jsp:attribute>
 </template:base>
