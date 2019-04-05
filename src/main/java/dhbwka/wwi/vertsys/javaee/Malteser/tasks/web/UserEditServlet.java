@@ -74,10 +74,10 @@ private ValidationBean validationBean;
             try {
                 aktuellerUser.setVorname(vorname);
                 aktuellerUser.setNachname(nachname);
-                aktuellerUser.setPasswordHash(password2);
-                aktuellerUser.addToGroup("app-user");
+                aktuellerUser.setPassword(password2);
+                //aktuellerUser.addToGroup("app-user");
                 this.userBean.update(aktuellerUser);
-               
+                
             } catch (Exception ex) {
                 errors.add(ex.getMessage());
             }
@@ -88,8 +88,7 @@ private ValidationBean validationBean;
         } else {            
             response.sendRedirect(WebUtils.appUrl(request, "/app/dashboard/"));
         }
-        
-        this.userBean.update(user);
+   
     }
 
 
