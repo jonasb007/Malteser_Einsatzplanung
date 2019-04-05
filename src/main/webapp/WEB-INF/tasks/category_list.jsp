@@ -76,7 +76,7 @@
                         </div>
 
                         <button type="submit" name="action" value="delete">
-                            Markierte löschen
+                            Ausgewählte löschen!
                         </button>
                     </div>
                 </c:otherwise>
