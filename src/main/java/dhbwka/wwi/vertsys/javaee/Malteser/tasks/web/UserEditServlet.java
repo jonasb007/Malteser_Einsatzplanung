@@ -93,18 +93,14 @@ private ValidationBean validationBean;
             formValues.setValues(request.getParameterMap());
             formValues.setErrors(errors);
             
+            request.setAttribute("eingabeVorname", "");
+            request.setAttribute("eingabeNachname", "");
+            
             session.setAttribute("task_form", formValues);
 
             response.sendRedirect(request.getRequestURI());
             
             
-//            request.setAttribute("eingabeVorname", vorname);
-//            request.setAttribute("eingabeNachname", nachname);
-//            request.setAttribute("eingabePasswort1", password1);
-//            request.setAttribute("eingabePasswort2", password2);
-//            request.setAttribute("eingabeError", errors);
-//            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/tasks/useredit.jsp");
-//            dispatcher.forward(request, response);
         }
    
     }
