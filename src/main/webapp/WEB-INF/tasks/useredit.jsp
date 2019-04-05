@@ -55,7 +55,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_vorname" value="${sessionScope.user.vorname}">
+                        <input type="text" name="signup_vorname" value="${requestScope.eingabeVorname}">
                     </div>
                     
                     <label for="signup_nachname">
@@ -63,7 +63,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="text" name="signup_nachname" value="${sessionScope.user.nachname}">
+                        <input type="text" name="signup_nachname" value="${requestScope.eingabeNachname}">
                     </div>                    
                     
 
@@ -72,7 +72,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password1" value="">
+                        <input type="password" name="signup_password1" value="${requestScope.eingabePasswort1}">
                     </div>
 
                     <label for="signup_password2">
@@ -80,7 +80,7 @@
                         <span class="required">*</span>
                     </label>
                     <div class="side-by-side">
-                        <input type="password" name="signup_password2" value="">
+                        <input type="password" name="signup_password2" value="${requestScope.eingabePasswort2}">
                     </div>
 
                     <%-- Button zum Abschicken --%>
@@ -92,9 +92,9 @@
                 </div>
 
                 <%-- Fehlermeldungen --%>
-                <c:if test="${!empty signup_form.errors}">
+                <c:if test="${!empty requestScope.eingabeError}">
                     <ul class="errors">
-                        <c:forEach items="${signup_form.errors}" var="error">
+                        <c:forEach items="${requestScope.eingabeError}" var="error">
                             <li>${error}</li>
                         </c:forEach>
                     </ul>

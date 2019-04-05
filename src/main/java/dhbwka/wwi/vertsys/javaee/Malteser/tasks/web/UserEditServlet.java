@@ -46,6 +46,8 @@ private ValidationBean validationBean;
         HttpSession session = request.getSession();
         User user = this.userBean.getCurrentUser();
         session.setAttribute("user", user);
+        request.setAttribute("eingabeVorname", user.getVorname());
+        request.setAttribute("eingabeNachname", user.getNachname());
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/tasks/useredit.jsp");
         dispatcher.forward(request, response);
 
@@ -58,7 +60,6 @@ private ValidationBean validationBean;
         User aktuellerUser = this.userBean.getCurrentUser();
         
         String vorname = request.getParameter("signup_vorname");
-        //if (vorname != null && )
         String nachname = request.getParameter("signup_nachname");
         String password1 = request.getParameter("signup_password1");
         String password2 = request.getParameter("signup_password2");
@@ -86,8 +87,14 @@ private ValidationBean validationBean;
         
         if (errors.isEmpty()) {
             response.sendRedirect(WebUtils.appUrl(request, "/app/dashboard/"));
-        } else {            
-            response.sendRedirect(WebUtils.appUrl(request, "/app/dashboard/"));
+        } else {
+            request.setAttribute("eingabeVorname", vorname);
+            request.setAttribute("eingabeNachname", nachname);
+            request.setAttribute("eingabePasswort1", password1);
+            request.setAttribute("eingabePasswort2", password2);
+            request.setAttribute("eingabeError", errors);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/tasks/useredit.jsp");
+            dispatcher.forward(request, response);
         }
    
     }
